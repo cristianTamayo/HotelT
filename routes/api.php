@@ -19,3 +19,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/registroHabitacion',[App\Http\Controllers\HabitacionController::class, 'registroHabitacion']);
+
+Route::get('/consultaHabitacion/{id}',[App\Http\Controllers\HabitacionController::class, 'consultaHabitacion']);
+
+Route::post('/consultaHabitacionCodigo',[App\Http\Controllers\HabitacionController::class, 'consultaHabitacionCodigo']);
+
+Route::get('/listarHabitaciones',[App\Http\Controllers\HabitacionController::class, 'listarHabitaciones']);
+
+Route::get('/eliminarHabitacion/{id}',[App\Http\Controllers\HabitacionController::class, 'eliminarHabitacion']);
+
+Route::post('/actualizarHabitacion',[App\Http\Controllers\HabitacionController::class, 'actualizarHabitacion']);
