@@ -29,3 +29,7 @@ Route::get('/listarHabitaciones',[App\Http\Controllers\HabitacionController::cla
 Route::get('/eliminarHabitacion/{id}',[App\Http\Controllers\HabitacionController::class, 'eliminarHabitacion']);
 
 Route::post('/actualizarHabitacion',[App\Http\Controllers\HabitacionController::class, 'actualizarHabitacion']);
+
+Route::post('/registroCliente',[App\Http\Controllers\ClienteController::class, 'registroCliente']);
+
+Route::post('/inicioSesion',[App\Http\Controllers\ClienteController::class, 'inicioSesion']);
