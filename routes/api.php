@@ -33,3 +33,9 @@ Route::post('/actualizarHabitacion',[App\Http\Controllers\HabitacionController::
 Route::post('/registroCliente',[App\Http\Controllers\ClienteController::class, 'registroCliente']);
 
 Route::post('/inicioSesion',[App\Http\Controllers\ClienteController::class, 'inicioSesion']);
+
+Route::post('/crearReserva',[App\Http\Controllers\ReservaController::class, 'crearReserva']);
+
+Route::post('/listarReservas',[App\Http\Controllers\ReservaController::class, 'listarReservas']);
+
+Route::post('/eliminarReserva',[App\Http\Controllers\ReservaController::class, 'eliminarReserva']);

@@ -27,4 +27,13 @@ class Cliente extends Model
         'password',
         'remember_token',
     ];
+
+
+    public function reserva(){
+        return $this->hasMany(Reserva::class);
+    }
+
+    public function getCedula(){
+        return $this->cedula;
+    }
 }

@@ -17,6 +17,11 @@ class Habitacion extends Model
         'numero_camas',
         'imagen'
     ];
+
+
+    public function reserva(){
+        return $this->hasMany(Reserva::class);
+    }
 }
 
 
